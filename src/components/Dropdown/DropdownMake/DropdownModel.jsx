@@ -39,7 +39,7 @@ export const DropdownModel = ({ allCars }) => {
             type="text"
             name="firstName"
             placeholder="Enter the text"
-            value={inputValue}
+            defaultValue={inputValue}
           />
           {!isOpen ? (
             <RiArrowDownSLine
@@ -59,6 +59,7 @@ export const DropdownModel = ({ allCars }) => {
               {allCars.map(oneCar => {
                 return (
                   <li
+                    key={oneCar.id}
                     className={css.dropdown_item}
                     onClick={() => handleAction(oneCar.make)}
                   >

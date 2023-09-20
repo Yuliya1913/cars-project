@@ -75,7 +75,7 @@ export const ModalWindow = ({
         <p>Rental Conditions: </p>
         <ul>
           {strRentalConditions.map(strRentalCondition => {
-            return <li>{strRentalCondition}</li>;
+            return <li key={strRentalCondition}>{strRentalCondition}</li>;
           })}
           <li>Mileage:{mileage}</li>
           <li>Price: {rentalPrice}</li>
@@ -104,9 +104,9 @@ ModalWindow.propTypes = {
     description: PropTypes.string.isRequired,
     fuelConsumption: PropTypes.string.isRequired,
     engineSize: PropTypes.string.isRequired,
-    accessories: PropTypes.string.isRequired,
+    accessories: PropTypes.array.isRequired,
     rentalConditions: PropTypes.string.isRequired,
-    mileage: PropTypes.string.isRequired,
+    mileage: PropTypes.number.isRequired,
   }),
   setActive: PropTypes.func,
 };
