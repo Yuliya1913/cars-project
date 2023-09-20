@@ -1,0 +1,37 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.navpage {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid #cbc4c4;
+  background-color: rgba(234, 249, 248, 0.685);
+}
+.link {
+  margin-right: 40px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(82, 8, 151);
+}
+
+.link:hover,
+.link:focus {
+  color: rgb(168, 89, 241);
+}
+
+.link.active {
+  color: red;
+}

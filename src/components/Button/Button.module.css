@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  text-decoration: none;
+  background-color: #3470ff;
+  padding: 12px, 50px, 12px, 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  border: none;
+
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: white;
+}

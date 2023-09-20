@@ -1,0 +1,108 @@
+/* .container:not(:last-child) {
+  margin-right: 29px;
+} */
+
+.container {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: 29px; */
+  flex-basis: calc(25% - 29px);
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  /* position: relative; */
+  /* margin-bottom: 14px; */
+  /* height: 268px; */
+  max-width: unset;
+  object-fit: cover;
+  float: left;
+  overflow: hidden;
+  /* position: relative; */
+  max-width: 274px;
+  margin-bottom: 25px;
+  float: left;
+  height: 268px;
+}
+
+.wrapper {
+  flex: 1 1 auto;
+}
+
+.data {
+  /* Manrope */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #121417;
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+.make {
+  margin-right: 2px;
+}
+
+.model {
+  color: blue;
+  margin-right: 2px;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.adress {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.adress_list::after,
+.function_list::after {
+  content: '';
+  width: 1px;
+  height: 18px;
+  border-right: 1px solid #d9d9d9;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.function {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+.button_list {
+  /* display: flex; */
+  /* justify-content: center; */
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  background-color: #3470ff;
+  padding: 12px 99px;
+
+  cursor: pointer;
+  /* font-size: 14px; */
+  color: white;
+  /* text-decoration: none; */
+  font: Manrope;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.button_list:hover,
+.button_list:focus {
+  background-color: #0b44cd;
+}
+
+.btn_heard {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
