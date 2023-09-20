@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_template=self.webpackChunkreact_template||[]).push([[643],{643:function(e,t,a){a.r(t);var r=a(184);t.default=function(){var e=localStorage.getItem("favoriteCar"),t=JSON.parse(e);return console.log(t),(0,r.jsx)("div",{})}}}]);
+//# sourceMappingURL=643.ca72880e.chunk.js.map
