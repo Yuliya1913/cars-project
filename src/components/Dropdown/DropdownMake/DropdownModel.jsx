@@ -16,6 +16,8 @@ export const DropdownModel = ({ allCars }) => {
     setCarId(id);
   };
 
+  console.log(carId);
+
   async function getOneCars(carId) {
     try {
       // setIsLoading(true);

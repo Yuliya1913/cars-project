@@ -64,12 +64,12 @@ export const ModalWindow = ({
         <p>Accessories and functionalities:</p>
         <ul>
           {accessories.map(item => {
-            return <li>{item}</li>;
+            return <li key={item}>{item}</li>;
           })}
         </ul>
         <ul>
           {functionalities.map(functional => {
-            return <li>{functional}</li>;
+            return <li key={functional}>{functional}</li>;
           })}
         </ul>
         <p>Rental Conditions: </p>
@@ -96,10 +96,10 @@ ModalWindow.propTypes = {
     model: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
-    address: PropTypes.array.isRequired,
+    address: PropTypes.string.isRequired,
     functionalities: PropTypes.array.isRequired,
-    year: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
+    year: PropTypes.number.isRequired,
+    id: PropTypes.number.isRequired,
     rentalPrice: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     fuelConsumption: PropTypes.string.isRequired,
@@ -108,5 +108,5 @@ ModalWindow.propTypes = {
     rentalConditions: PropTypes.string.isRequired,
     mileage: PropTypes.string.isRequired,
   }),
-  setActive: PropTypes.bool,
+  setActive: PropTypes.func,
 };
